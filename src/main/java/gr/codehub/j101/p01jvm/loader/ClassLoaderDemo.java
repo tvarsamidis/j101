@@ -1,4 +1,4 @@
-package gr.codehub.j101.p01jvm;
+package gr.codehub.j101.p01jvm.loader;
 
 import org.slf4j.Logger;
 
@@ -9,12 +9,12 @@ import java.util.ArrayList;
 public class ClassLoaderDemo {
 
 	public static void main(String[] args) throws ClassNotFoundException {
-		customLoadersDemo();
+		customeLoadersDemo();
 		systemClassLoaderDemo();
-		//loadNamedClassDemo();
+		loadNamedClassDemo();
 	}
 
-	private static void customLoadersDemo() {
+	private static void customeLoadersDemo() {
 		System.out.println("\n** customLoadersDemo **********************************************************");
 		ClassLoader classLoader = ClassLoaderDemo.class.getClassLoader();
 		System.out.println("Class loader 1 toString: " + classLoader.toString());

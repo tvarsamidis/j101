@@ -1,4 +1,4 @@
-package gr.codehub.j101.p01jvm;
+package gr.codehub.j101.p01jvm.loader;
 
 public class CustomClassLoaderExample {
 	public static void main(String[] args) {
