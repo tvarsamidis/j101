@@ -1,4 +1,4 @@
-package gr.codehub.j101;
+package gr.codehub.j101.p01jvm;
 
 import java.util.ArrayList;
 import java.util.List;
