@@ -21,7 +21,7 @@ public class Box<T> {
     public static void main(String[] args) {
         Box<String> box = new Box();
         box.set("abc");
-        box.inspect(new Double(3));
+        box.inspect(Double.valueOf(3));
 
     }
 
