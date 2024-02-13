@@ -34,10 +34,10 @@ public class Main {
 	private static final Logger logger = LoggerFactory.getLogger(Main.class);
 
 	public static void main(String[] args) {
- 		encode();
+// 		encode();
 //		basicNetworkInformation();
 //		availablePorts();
-//		httpGetRequestOld();
+		httpGetRequestOld();
 //		httpGetRequestSynchronous();
 //		httpGetRequestAsynchronous();
 //		httpGetRequestMultipleRequests();
@@ -76,8 +76,8 @@ public class Main {
 			try {
 				DatagramSocket ds = new DatagramSocket(port);
 				ds.close();
-			} catch (IOException e) {
-				logger.error("Port {} is not available.", port, e);
+			} catch (Exception e) {
+				logger.error("Port {} is not available.", port);
 			}
 		}
 	}
